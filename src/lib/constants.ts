@@ -12,8 +12,8 @@ export const COMPANY = {
   description:
     "Finotech Advisory Inc. est un cabinet de conseil stratégique spécialisé en business intelligence, stratégie d'entreprise, finance corporative, formation et recherche appliquée. Nous accompagnons dirigeants, conseils d'administration et investisseurs dans leurs décisions les plus critiques.",
   founded: "2021",
-  email: "info@finotechadvisory.ca",
-  phone: "+1 819 680-3648",
+  email: "contact@finotechadvisory.ca",
+  phone: "+1 819 580-3648",
   addressLine: "41 Rue King Ouest, Sherbrooke, QC J1H 1P1",
   city: "Sherbrooke",
   region: "Québec",
