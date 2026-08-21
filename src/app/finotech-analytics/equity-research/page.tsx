@@ -7,6 +7,7 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { Reveal } from "@/components/ui/Reveal";
 import { ResearchNotesFilter } from "@/components/sections/ResearchNotesFilter";
+import { MarketReviewsDownloads } from "@/components/sections/MarketReviewsDownloads";
 import { BulletinSubscribeForm } from "@/components/sections/BulletinSubscribeForm";
 import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 import { RESEARCH_DISCLAIMER } from "@/lib/data/equity-research";
@@ -119,6 +120,22 @@ export default function EquityResearchPage() {
             <p className="text-sm leading-relaxed text-anthracite-700 dark:text-anthracite-300">
               {RESEARCH_DISCLAIMER}
             </p>
+          </div>
+        </Container>
+      </Section>
+
+      <Section tone="muted">
+        <Container>
+          <p className="kicker">Revue hebdomadaire</p>
+          <h2 className="mt-4 text-display-lg font-display font-medium text-navy-900 dark:text-white">
+            Revue des marchés mondiaux — téléchargements PDF
+          </h2>
+          <p className="mt-3 max-w-2xl leading-relaxed text-anthracite-600 dark:text-anthracite-300">
+            Chaque jeudi, un survol condensé des marchés boursiers, obligataires et des matières
+            premières, en format PDF téléchargeable.
+          </p>
+          <div className="mt-8">
+            <MarketReviewsDownloads />
           </div>
         </Container>
       </Section>
