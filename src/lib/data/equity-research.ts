@@ -24,7 +24,7 @@ export const RESEARCH_CATEGORIES = ["Toutes", "Note sectorielle", "Note sur titr
 // ne constituent ni une recommandation de placement ni une analyse de titres
 // réellement cotés.
 export const RESEARCH_DISCLAIMER =
-  "Cette note est publiée à titre informatif et pédagogique seulement. Les émetteurs, cours et cibles mentionnés sont fictifs et servent à illustrer le format éditorial d'Equity Research. Aucun élément de cette page ne constitue un conseil en placement, une recommandation d'achat ou de vente, ni une sollicitation. Consultez un conseiller en valeurs mobilières inscrit avant toute décision d'investissement.";
+  "Cette note est publiée à titre informatif et pédagogique seulement. Aucun élément de cette page ne constitue un conseil en placement, une recommandation d'achat ou de vente, ni une sollicitation. Consultez un conseiller en valeurs mobilières inscrit avant toute décision d'investissement.";
 
 export const RESEARCH_NOTES: ResearchNote[] = [
   {
