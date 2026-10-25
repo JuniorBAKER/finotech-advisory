@@ -12,7 +12,7 @@ import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 export const metadata: Metadata = {
   title: "Carrières",
   description:
-    "Rejoignez Finotech Advisory : postes en Corporate Finance, Business Intelligence, Business Strategy et Training and Research à Sherbrooke.",
+    "Carrières chez Finotech Advisory : notre culture et nos avantages. Aucun poste n'est ouvert actuellement.",
   alternates: { canonical: "/carrieres" },
 };
 
@@ -29,8 +29,8 @@ export default function CarrieresPage() {
               Construire une carrière sur la rigueur, pas sur le volume.
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-anthracite-300">
-              Nous recrutons des professionnels qui préfèrent un mandat bien fait à dix mandats
-              approximatifs. Si cette exigence vous parle, explorez nos postes ouverts.
+              Nous recherchons des professionnels qui préfèrent un mandat bien fait à dix mandats
+              approximatifs. Tous nos processus de recrutement sont actuellement fermés.
             </p>
           </div>
         </Container>
@@ -75,6 +75,17 @@ export default function CarrieresPage() {
           <h2 className="text-display-lg font-display font-medium text-navy-900 dark:text-white">
             Postes ouverts
           </h2>
+          {JOB_OPENINGS.length === 0 && (
+            <div className="mt-10 rounded-2xl border border-anthracite-200/70 bg-white p-8 dark:border-white/10 dark:bg-navy-900">
+              <h3 className="font-display text-xl font-medium text-navy-900 dark:text-white">
+                Aucun poste ouvert actuellement
+              </h3>
+              <p className="mt-3 max-w-2xl leading-relaxed text-anthracite-600 dark:text-anthracite-300">
+                Nos processus de recrutement sont fermés pour le moment. Les prochaines ouvertures
+                de postes seront annoncées sur cette page et sur notre page LinkedIn.
+              </p>
+            </div>
+          )}
           <div className="mt-10 space-y-5">
             {JOB_OPENINGS.map((job, i) => (
               <Reveal key={job.slug} delay={i * 0.05}>
@@ -141,12 +152,12 @@ export default function CarrieresPage() {
       <Section tone="muted">
         <Container>
           <CTABanner
-            title="Aucun poste ne correspond, mais vous pensez avoir votre place chez nous ?"
-            description="Écrivez-nous en candidature spontanée — nous lisons chaque message personnellement."
-            primaryLabel="Envoyer une candidature spontanée"
-            primaryHref="mailto:carrieres@finotechadvisory.ca"
-            secondaryLabel="Nous contacter"
-            secondaryHref="/contact"
+            title="Une question sur Finotech Advisory ?"
+            description="Notre équipe est à votre disposition pour toute question sur nos services ou nos mandats."
+            primaryLabel="Nous contacter"
+            primaryHref="/contact"
+            secondaryLabel="Découvrir nos expertises"
+            secondaryHref="/expertises"
           />
         </Container>
       </Section>

@@ -11,6 +11,30 @@ export type MarketReview = {
 // Les fichiers PDF correspondants vivent dans /public/downloads/equity-research/.
 export const MARKET_REVIEWS: MarketReview[] = [
   {
+    slug: "revue-marches-2026-10-25",
+    date: "2026-10-25",
+    title: "Saison des résultats T3 2026 — 25 octobre 2026",
+    highlights: "BPA +29 % · Meta : BPA en baisse de 42 % · Tesla : résultat d'exploitation −56 % · FOMC : maintien à 83 % · Brent à 107 $ · Élections de mi-mandat le 3 novembre",
+    file: "/downloads/equity-research/revue-marches-2026-10-25.pdf",
+    fileSize: "0,3 Mo",
+  },
+  {
+    slug: "revue-marches-2026-09-03",
+    date: "2026-09-03",
+    title: "Revue des marchés mondiaux — 3 septembre 2026",
+    highlights: "Emplois (NFP) d'août attendus ce matin · Réescalade en Iran · Brent à 95 $ · Waller accommodant · FOMC le 16 septembre",
+    file: "/downloads/equity-research/revue-marches-2026-09-03.pdf",
+    fileSize: "0,2 Mo",
+  },
+  {
+    slug: "revue-marches-2026-08-27",
+    date: "2026-08-27",
+    title: "Revue des marchés mondiaux — 27 août 2026",
+    highlights: "NVIDIA 96,2 G$ de revenus (+106 %) · Ton restrictif de Warsh à Jackson Hole · PCE 3,7 % · NVDA +9 % · FOMC le 16 septembre",
+    file: "/downloads/equity-research/revue-marches-2026-08-27.pdf",
+    fileSize: "0,3 Mo",
+  },
+  {
     slug: "revue-marches-2026-08-20",
     date: "2026-08-20",
     title: "Revue des marchés mondiaux — 20 août 2026",
